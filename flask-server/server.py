@@ -5,7 +5,7 @@ from flask import Flask, jsonify, request
 # from flask_cors import CORS
 from flask.helpers import send_from_directory
 
-app = Flask(__name__, static_folder="frontend/build", static_url_path="")
+app = Flask(__name__, static_folder="/frontend/build", static_url_path="")
 # CORS(app)
 
 valid = [] # initialize an empty list
