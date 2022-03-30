@@ -21,9 +21,9 @@ def name(input_state: str):
         else:
             return jsonify(output="User Not Found")
 
-
+@app.route('/')
 def index():
     return send_from_directory(app.static_folder, "index.html")
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0")
+    app.run(host='0.0.0.0')
